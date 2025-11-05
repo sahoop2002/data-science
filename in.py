@@ -1,0 +1,12 @@
+import pandas as pd
+df = pd.read_json('/Users/pratipsahoo/Developer/pandas/sample_Data.json') 
+print("Displaying the info of dataset")   
+print(df.info())
+# print(df.describe())
+# print(df.columns)
+# print(df.dtypes)
+# print(df.shape)
+# print(df.index)
+# print(df.values)
+# print(df.head())
+# print(df.tail())    

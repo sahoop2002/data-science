@@ -1,0 +1,61 @@
+1- understand the dataset
+2- identify the problems 
+3- plan next steps 
+#####################################
+
+1- columns, rows?
+2- what type of data?
+3- missing data?
+
+
+info()  #is a method which gave us a summery of our data. it will display :
+1- number of rows and columns
+2- column name
+3- int64 float64 object
+4- non null counts 
+5- memory usages of the dataframe
+
+###########################################################
+for modification and manipulation data and filtering rows 
+1- select specific column / use square brackets[]
+2- filter rows  / use boolean conditions 
+3- combine multiple conditions 
+
+selecting columns 
+1- a series
+2- dataframe multiple columns of data 
+
+column = df["Column name"]
+subset = df["column1","column2","..."]
+
+filtering data 
+boolean indexing 
+
+###########################################################
+# based on a single condition 
+filtered_Rows = df[df["Column_NAme"]condition]
+filtered_Rows = df[df["Salary"]>50000]
+#combine multiple conditions 
+filtered_Rows = df[(df["salary"]>50000)&(df["salary"]<80000)]
+
+#############################################################
+representing missing data ------ 
+---NaN(not a number)
+---None(for object data types)
+for detect missing data 
+        isnull()    [is a method]
+        True - NaN is missing
+        False - value is present 
+
+
+- preserve data integrity 
+- smooth trends
+- aviod data loss 
+
+interpolation [filling the other missing data frame which is there forward and backward]
+ 
+----------------------------------------------------------------------------------------------------------
+#####-----    Sorting and Aggregation
+
+sorting - arranging rows in a data frame based on the values of one or more columns 
+
